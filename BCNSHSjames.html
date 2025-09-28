@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BCNSHS | ExCELS — About</title>
+  <meta name="description" content="Bais City National Science High School — modern, minimal profile."/>
+  <style>
+    :root{
+      --bg: linear-gradient(135deg, #dbeafe, #e9d5ff);
+      --card: #ffffff;
+      --accent: #2563eb;
+      --muted: #6b7280;
+      --radius: 12px;
+      --maxw: 980px;
+      --gap: 20px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.6}
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:64px;height:64px;border-radius:10px;background:var(--card);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    .title{line-height:1}
+    .title h1{margin:0;font-size:18px;letter-spacing:0.6px}
+    .title p{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    main{display:grid;grid-template-columns:1fr;gap:var(--gap)}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(16,24,40,0.04)}
+    h2{margin:0 0 10px;font-size:16px}
+    p.lead{margin:0;color:var(--muted)}
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .gallery-item{border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .gallery-item img{width:100%;height:260px;object-fit:cover;display:block;transition:transform .25s ease}
+    .gallery-item:hover img{transform:scale(1.03)}
+    .caption{padding:10px 12px;font-size:13px;color:var(--muted)}
+
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+
+    @media (max-width:800px){
+      .two-col{grid-template-columns:1fr}
+      .gallery img{height:180px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">BC</div>
+      <div class="title">
+        <h1>BCNSHS | ExCELS: Excellence in Science and Learning</h1>
+        <p>Bais City National Science High School — modern & minimal profile</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>About Bais City National Science High School</h2>
+        <p class="lead">Bais City National Science High School (BCNSHS) is a premier public secondary institution in Bais City, Negros Oriental, dedicated to providing quality science-oriented education to Filipino learners. Established to nurture future scientists, innovators, and leaders, BCNSHS emphasizes STEM while valuing the humanities and social responsibility.</p>
+      </section>
+
+      <section class="card two-col">
+        <div>
+          <h2>Vision</h2>
+          <p class="lead">We dream of Filipinos who deeply love their country, grow to their fullest potential, and help build the nation. As a learner-centered institution, DepEd continuously improves to serve students, teachers, and the community better.</p>
+        </div>
+        <div>
+          <h2>Mission</h2>
+          <p class="lead">DepEd ensures the right of every Filipino to quality, inclusive, and culture-based education by creating safe, child-friendly learning environments; guiding learners through committed teachers; enabling effective leadership and teamwork; and working with families and communities.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Core Values</h2>
+        <p class="lead"><strong>Maka-Diyos</strong> — God-loving<br/><strong>Maka-tao</strong> — Respectful and compassionate<br/><strong>Makakalikasan</strong> — Caring for the environment<br/><strong>Makabansa</strong> — Patriotic and nation-loving</p>
+      </section>
+
+      <section class="card">
+        <h2>Campus Gallery</h2>
+        <p class="lead">Take a glimpse into campus life. Click images to enlarge.</p>
+
+        <div class="gallery" id="gallery">
+          <div class="gallery-item">
+            <img src="E5747948-46B0-4BBD-83DA-C1B1D5B410E1.jpeg" alt="Campus landmark">
+            <div class="caption">A vibrant symbol of school pride standing tall in front of the main building.<br/><em>Photo credits: Laurence Pagador</em></div>
+          </div>
+          <div class="gallery-item">
+            <img src="166FFC73-2F67-4117-B69B-9154FA322F5B.jpeg" alt="School building">
+            <div class="caption">The school’s facade basking under a clear sky, reflecting the spirit of learning and growth.<br/><em>Photo credits: loritha joyce llera</em></div>
+          </div>
+          <div class="gallery-item">
+            <img src="F1D994FC-6832-4F38-B1E4-9C7E08169134.jpeg" alt="School hallway">
+            <div class="caption">Quiet corridors that echo with the footsteps and stories of countless learners.<br/><em>Photo credits: Christian Acojedo</em></div>
+          </div>
+          <div class="gallery-item">
+            <img src="88FF5EE6-C0E5-4713-A226-0F4D9D227C46.jpeg" alt="School canteen">
+            <div class="caption">The lively canteen where students gather, share meals, and create memories together.<br/><em>Photo credits: verna filosofo</em></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Bais City National Science High School. All Rights Reserved.
+    </footer>
+  </div>
+</body>
+</html>
